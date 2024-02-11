@@ -1,23 +1,32 @@
-# Maps app for Smartwatch EMS
+# Smartwatch EMS Maps App
 
-This project is a smartwatch app for using GPS to travel. It sends a bluetooth signal to low energy bluetooth device whenever a turn is coming up and as soon as the turn is finished. This can be easily customized to adapt to any task using an arduino or similar microcontroller. 
+This project is a smartwatch application designed for GPS navigation. It utilizes Mapbox services to provide accurate mapping and navigation functionalities. The app sends Bluetooth signals to low-energy Bluetooth devices whenever a turn is approaching and when the turn is completed. This app can be easily customized to adapt to various tasks using Arduino or similar microcontrollers.
+
+## Features
+
+- **GPS Navigation**: Provides accurate GPS navigation between specified locations.
+- **Bluetooth Integration**: Sends Bluetooth signals to low-energy devices for turn alerts during navigation.
+- **Mapbox Support**: Utilizes Mapbox services for accurate mapping and navigation functionalities.
 
 ## Installation
 
-Make sure you follow the steps under the [Installation](https://docs.mapbox.com/android/beta/navigation/guides/install/) guide. Once you have your **public and secret access tokens ready**, do the following:
+Follow these steps to install the application:
 
-Go to res/values and there you should add a file called: mapbox_access_token.xml. Add your public token as a string. 
-In mapbox_access_token.xml:
+1. **Set Up Mapbox Access Token**:
+   - Create a file named `mapbox_access_token.xml` in `res/values`.
+   - Add your public Mapbox token as a string in `mapbox_access_token.xml`.
+   - Replace `CHANGE THIS TO THE PUBLIC MAPBOX TOKEN` with your public Mapbox token.
 
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="mapbox_access_token">CHANGE THIS TO THE PUBLIC MAPBOX TOKEN</string>
-</resources>
+2. **Update Gradle Properties**:
+   - In `gradle.properties`, replace the Mapbox token with your secret access token.
 
+3. **Run the Project**: 
+   - Build and run the project to start using the app.
 
+## Author
 
-In the gradle.properties, change the mapbox token to be your secret access token.
+Created by Archit Tamhane.
 
-Run the project and enjoy!
+---
 
-By Archit Tamhane
+For any inquiries or contributions, please contact the repository owner. Enjoy navigating with the Smartwatch EMS Maps App!
