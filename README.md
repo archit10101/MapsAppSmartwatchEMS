@@ -23,6 +23,10 @@ Follow these steps to install the application:
 3. **Run the Project**: 
    - Build and run the project to start using the app.
 
+## Disclaimer
+
+This application is provided as-is without any warranty. Use it responsibly and at your own risk.
+
 ## Author
 
 Created by Archit Tamhane.
